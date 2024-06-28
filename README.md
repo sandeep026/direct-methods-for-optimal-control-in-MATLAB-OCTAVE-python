@@ -58,8 +58,8 @@ and transformed to a nonlinear optimization problem. The solution of the optimiz
 |Legendre Gauss Lobatto [^3]|global polynomial|```LGL pseudospectral.m, legslb.m, legslbdiff.m, lepoly.m, lepolym.m```|
 
 ## Results
-![image](..\MATLABOROCTAVE\phaseplot.svg)
-![image](..\MATLABOROCTAVE\control.svg)
+![image](phaseplot.svg)
+![image](control.svg)
 
 ## Requirements
 
