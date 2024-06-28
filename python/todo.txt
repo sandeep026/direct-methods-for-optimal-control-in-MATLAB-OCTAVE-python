@@ -1,0 +1,5 @@
+use class template for all ocp  for different methods
+include LGL in it
+
+demonstrate all problems and solution
+
