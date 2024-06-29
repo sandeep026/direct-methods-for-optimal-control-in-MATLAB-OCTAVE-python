@@ -45,8 +45,7 @@ f(t)&=\frac{1}{4}e^{t}-\frac{1}{2}\\
 $$
 
 ## Numerical methods for optimal control
-The sample codes demonstrate direct methods [^2], a class of methods used to solve optimal control problems numerically. The time domain, objective functional and the constraints are discretized
-and transformed to a nonlinear optimization problem. The solution of the optimization problem comprise the optimal discrete state and control vector.
+The sample codes demonstrate direct methods [^2], a class of methods used to solve optimal control problems numerically. The time domain, objective functional and the constraints are discretized and transformed to a nonlinear optimization problem. The solution of the optimization problem comprise the optimal discrete state and control vector.
 
 ### Numerical methods implemented
 |method|control parameterization|files|
@@ -58,16 +57,30 @@ and transformed to a nonlinear optimization problem. The solution of the optimiz
 |Legendre Gauss Lobatto [^3]|global polynomial|```LGL pseudospectral.m, legslb.m, legslbdiff.m, lepoly.m, lepolym.m```|
 
 ## Results
+
+Numerical and analytical results compared side by side.
+
 ![image](phaseplot.svg)
 ![image](control.svg)
 
-## Requirements
+## Implementation
 
-The codes were developed using
+The code are available in both python, octave or matlab for use.
+
+### MATLAB/OCTAVE
 - MATLAB/[OCTAVE-6.1.0](https://octave.org/)
 - [Casadi 3.5.5](https://web.casadi.org/)
 
-and should work on higher version with/without minimal modification.
+### python
+
+#### Requirements
+- python ^3.11
+- casadi 3.6.5
+- matplotlib
+- numpy ^1.26.4
+
+* The jupyter notebooks for all the methods are available in the python folder. 
+* ```lglpsmethods.py```- module which generates the differentiation matrix, quadrature and nodes for pseudospectral methods.
 
 # References
 
